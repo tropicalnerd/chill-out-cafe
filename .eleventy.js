@@ -7,9 +7,11 @@
 // }
 
 module.exports = function(config) {
+	config.addPassthroughCopy( {"src/site/_sass/style.css": "style.css"});
+
 	return {
 		dir: {
-			input: "src",
+			input: "src/site",
 			includes: "_templates",
 			layouts: "_templates/layouts",
 			output: "dist"
