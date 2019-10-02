@@ -9,9 +9,9 @@ gulp.task('sass', function() {
 	return gulp.src('./src/site/_sass/**/*.scss')
 		.pipe(sass().on('error', sass.logError))
 		.pipe(gulp.dest(
-			'./src/site/_scss'));
+			'./src/site/_sass'));
 });
 
 gulp.task('watch', function () {
-	gulp.watch('./src/site/_sass/**/*.sass', gulp.series('sass'));
+	gulp.watch('./src/site/_sass/**/*.scss', gulp.series('sass'));
 });
