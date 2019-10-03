@@ -1,16 +1,18 @@
 main.main
-	.page-decoration(role='presentation')
-		.page-decoration__inner
-
-	.page-decoration.reverse(role='presentation')
-		.page-decoration__inner
-		
 	article.menus
+		.page-decoration(role='presentation')
+			.page-decoration__inner
+
+		.page-decoration.reverse(role='presentation')
+			.page-decoration__inner
+
 		h1.page-title Menu
 
 		each menu in menus
 			section.menu
 				h2.menu__title= menu.title
+				if menu.subtitle
+					p.menu__subtitle !{menu.subtitle}
 
 				if menu.info
 					p.menu__info !{menu.info}

@@ -2,7 +2,8 @@
 	{
 			"id": "menu01",
 			"title": "Lunch Special",
-			"info": "Monday&ndash;Sunday 10am&ndash;3pm<br />All entrees served with <em>steamed rice, salad and soup</em>.<br />Fried vegetable spring roll or pork roll add $1.00 each.",
+			"subtitle": "Monday&ndash;Sunday 10am&ndash;3pm",
+			"info": "All entrees served with <em>steamed rice, salad and soup</em>.<br />Fried vegetable spring roll or pork roll add $1.00 each.",
 			"contents": [
 					{
 							"id": "L1",
