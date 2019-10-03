@@ -1,0 +1,60 @@
+.menus {
+	& > * + * {
+		margin-top: $s2;
+	}
+}
+
+.menu {
+	& > * + * {
+		margin-top: $s0;
+	}
+
+	&__title {
+		font-family: $heading-font;
+		font-size: 2rem;
+		font-weight: 300;
+		text-align: center;
+		color: $chill-out-blue;
+		text-transform: uppercase;
+	}
+
+	&__info {
+		font-size: 1.25rem;
+		line-height: 1.25;
+		color: $chill-out-blue;
+		text-align: center;
+		// margin: .25em 0 1.125em;
+	}
+
+	&__item-list {
+		& > * + * {
+			margin-top: $s-1;
+		}
+	}
+
+	&__item {
+		line-height: 1.2;
+
+		&__id {
+			font-weight: 600;
+		}
+
+		&__title {
+			font-weight: 600;
+		}
+
+		&__price {
+			float: right;
+			font-weight: 600;
+		}
+
+		&__option-list {
+			font-weight: 600;
+			padding-left: $s2;
+		}
+
+		&__option__price {
+			float: right;
+		}
+	}
+}

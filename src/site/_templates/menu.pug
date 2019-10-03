@@ -1,6 +1,6 @@
 main.main
-	article
-		h1 Menu
+	article.menus
+		h1.page-title Menu
 
 		each menu in menus
 			section.menu
@@ -9,19 +9,19 @@ main.main
 				if menu.info
 					p.menu__info !{menu.info}
 				
-				ul.menu__list
+				ul.menu__item-list
 					each item in menu.contents
 						li.menu__item
-							span.menu__id= item.id
-							span.menu__title= item.title
+							span.menu__item__id #{item.id + '. '}
+							span.menu__item__title= item.title
 							if item.price
-								span.menu__price= item.price
-							div.menu__desc= item.desc
+								span.menu__item__price $#{item.price}
+							div.menu__item__desc= item.desc
 							if item.options
-								ul.menu__options
+								ul.menu__item__option-list
 									each option in item.options
-										li.menu__option
-											span.menu__option-title= option.title
-											span.menu__option-price= option.price
+										li.menu__item__option
+											span.menu__item__option__title= option.title
+											span.menu__item__option__price $#{option.price}
 
 

@@ -5,8 +5,8 @@
   box-sizing: border-box; }
 
 /* Remove default padding */
-ul[class],
-ol[class] {
+ul,
+ol {
   padding: 0; }
 
 /* Remove default margin */
@@ -16,8 +16,8 @@ h2,
 h3,
 h4,
 p,
-ul[class],
-ol[class],
+ul,
+ol,
 li,
 figure,
 figcaption,
@@ -70,6 +70,26 @@ select {
 .bigger {
   font-size: 1.125em; }
 
+/*** Layout ***/
+body {
+  color: #222244; }
+
+.page-title {
+  font-size: 2.5rem;
+  line-height: 1;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+  color: #222244;
+  margin-bottom: .5em; }
+
+article {
+  box-sizing: content-box;
+  max-width: 60ch;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5rem; }
+
 .header {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   color: #FAFAFA;
@@ -101,3 +121,41 @@ select {
   .header__address {
     font-size: .875rem;
     margin-top: .25rem; }
+
+.menus > * + * {
+  margin-top: 2.25rem; }
+
+.menu > * + * {
+  margin-top: 1rem; }
+
+.menu__title {
+  font-family: Palatino, Palatino Linotype, Palatino LT STD, Book Anitqua, Georgia, serif;
+  font-size: 2rem;
+  font-weight: 300;
+  text-align: center;
+  color: #0088BB;
+  text-transform: uppercase; }
+
+.menu__info {
+  font-size: 1.25rem;
+  line-height: 1.25;
+  color: #0088BB;
+  text-align: center; }
+
+.menu__item-list > * + * {
+  margin-top: 0.66667rem; }
+
+.menu__item {
+  line-height: 1.2; }
+  .menu__item__id {
+    font-weight: 600; }
+  .menu__item__title {
+    font-weight: 600; }
+  .menu__item__price {
+    float: right;
+    font-weight: 600; }
+  .menu__item__option-list {
+    font-weight: 600;
+    padding-left: 2.25rem; }
+  .menu__item__option__price {
+    float: right; }

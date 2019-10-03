@@ -12,6 +12,7 @@ $s2: $s1 * $ratio;
 $s3: $s2 * $ratio;
 
 $paper-white: #FAFAFA;
+$ink-black: #222244;
 $chill-out-blue: #0088BB;
 
 /*** Utility Classes ***/
@@ -19,4 +20,27 @@ $chill-out-blue: #0088BB;
 	font-size: 1.125em;
 }
 
+/*** Layout ***/
+
+body {
+	color: $ink-black;	
+}
+
+.page-title {
+	font-size: 2.5rem;
+	line-height: 1;
+	font-weight: 300;
+	text-align: center;
+	text-transform: uppercase;
+	color: $ink-black;
+	margin-bottom: .5em;
+}
+
+article {
+	box-sizing: content-box;
+	max-width: 60ch;
+	margin-left: auto;
+	margin-right: auto;
+	padding: $s1;
+}
 
