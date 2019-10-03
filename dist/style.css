@@ -70,17 +70,46 @@ select {
 .bigger {
   font-size: 1.125em; }
 
+.reverse {
+  transform: scaleX(-1); }
+
 /*** Layout ***/
 body {
-  color: #222244; }
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  color: #222233; }
+
+main {
+  background-color: #0088BB;
+  padding-bottom: 3.375rem; }
+
+article {
+  background-color: #FAFAFA;
+  border-radius: 0 0 1.5rem 1.5rem; }
+
+.page-decoration {
+  position: absolute;
+  width: 3.375rem;
+  height: 2.25rem;
+  background-color: #0088BB; }
+  .page-decoration__inner {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 80%;
+    height: 80%;
+    background-color: #FAFAFA;
+    border-radius: 1.5rem 0 0 0; }
+  .page-decoration.reverse {
+    right: 0; }
 
 .page-title {
+  font-family: heading-font;
   font-size: 2.5rem;
   line-height: 1;
   font-weight: 300;
   text-align: center;
   text-transform: uppercase;
-  color: #222244;
+  color: #222233;
   margin-bottom: .5em; }
 
 article {
@@ -100,47 +129,57 @@ article {
     line-height: 1;
     text-transform: uppercase;
     padding-bottom: .25rem;
-    margin-top: .5rem;
-    border-bottom: 1px solid #FAFAFA; }
+    margin-top: .5rem; }
     .header__desc__top {
       font-size: 1.875rem; }
     .header__desc__bottom {
       font-size: 1.4rem; }
+  .header__hr {
+    margin: 0 auto;
+    color: #FAFAFA;
+    background-color: #FAFAFA;
+    width: 90%;
+    height: 1px;
+    border-width: 0; }
   .header__wrap {
     text-align: center;
     padding: 3.375rem; }
-    .header__wrap > * + * {
-      margin-top: 1.5rem; }
+  .header__address {
+    font-size: .875rem;
+    margin-top: .25rem; }
   .header__phone {
     display: block;
     font-size: 2rem;
     line-height: 1rem;
     color: #FAFAFA;
     text-decoration: none;
-    font-weight: 600; }
-  .header__address {
-    font-size: .875rem;
-    margin-top: .25rem; }
+    font-weight: 600;
+    margin-top: 1.5rem; }
+  .header__hours {
+    margin-top: 1.5rem; }
 
-.menus > * + * {
-  margin-top: 2.25rem; }
+.menus {
+  padding-top: 2.25rem; }
+  .menus > * + * {
+    margin-top: 2.25rem; }
 
 .menu > * + * {
   margin-top: 1rem; }
 
 .menu__title {
   font-family: Palatino, Palatino Linotype, Palatino LT STD, Book Anitqua, Georgia, serif;
-  font-size: 2rem;
+  font-size: 1.75rem;
   font-weight: 300;
   text-align: center;
   color: #0088BB;
   text-transform: uppercase; }
 
 .menu__info {
-  font-size: 1.25rem;
   line-height: 1.25;
   color: #0088BB;
   text-align: center; }
+  .menu__info em {
+    font-weight: 600; }
 
 .menu__item-list > * + * {
   margin-top: 0.66667rem; }
@@ -159,3 +198,15 @@ article {
     padding-left: 2.25rem; }
   .menu__item__option__price {
     float: right; }
+
+.footer {
+  padding: 1rem;
+  font-size: .75rem;
+  text-align: center;
+  background-color: #222233;
+  color: #FAFAFA; }
+  .footer__copyright + .footer__about::before {
+    content: "|";
+    padding: 0 .5em; }
+  .footer a {
+    color: #FAFAFA; }

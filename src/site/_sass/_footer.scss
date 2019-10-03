@@ -1,0 +1,28 @@
+.footer {
+	padding: $s0;
+	font-size: .75rem;
+	text-align: center;
+	background-color: $ink-black;
+	color: $paper-white;
+
+	&__copyright {
+		// display: block;
+	}
+
+	&__author {
+		// display: block;
+	}
+
+	&__copyright + &__about::before {
+		content: "|";
+		padding: 0 .5em;
+	}
+
+	a {
+		color: $paper-white;
+
+	}
+}
+
+
+
