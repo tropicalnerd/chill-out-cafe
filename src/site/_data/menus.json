@@ -161,7 +161,7 @@
 					}, {
 							"id": "B6",
 							"type": "menuitem",
-							"title": "Juice (Orange, Cranberry, Apple)",
+							"title": "Juice &ndash; Orange, Cranberry, Apple",
 							"price": 2.50
 					}, {
 							"id": "B7",
@@ -170,5 +170,47 @@
 							"price": 2
 					}
 			] 
-	}
+	}, {
+		"id": "appetizers",
+		"title": "Appetizers",
+		"contents": [
+				{
+						"id": "A1",
+						"type": "menuitem",
+						"title": "Golden Soft Shell Crab",
+						"desc": "Soft shell",
+						"price": 11
+				}, {
+						"id": "A2",
+						"type": "menuitem",
+						"title": "Soft Drinks, Milk",
+						"price": 2
+				}, {
+						"id": "B3",
+						"type": "menuitem",
+						"title": "Bottle Water",
+						"price": 1.85
+				}, {
+						"id": "B4",
+						"type": "menuitem",
+						"title": "Perrier",
+						"price": 2.60
+				}, {
+						"id": "B5",
+						"type": "menuitem",
+						"title": "Coffee, Ice Tea, Hot Green Tea (free refill)",
+						"price": 2
+				}, {
+						"id": "B6",
+						"type": "menuitem",
+						"title": "Juice &ndash; Orange, Cranberry, Apple",
+						"price": 2.50
+				}, {
+						"id": "B7",
+						"type": "menuitem",
+						"title": "Chocolate Milk, Hot Chocolate",
+						"price": 2
+				}
+		] 
+}
 ]

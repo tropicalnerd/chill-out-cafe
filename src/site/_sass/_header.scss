@@ -35,7 +35,7 @@
 		margin: 0 auto;
 		color: $paper-white;
 		background-color: $paper-white;
-		width: 90%;
+		width: 96%;
 		height: 1px;
 		border-width: 0;
 	}
@@ -47,7 +47,6 @@
 
 	&__address {
 		font-size: .875rem;
-		margin-top: .25rem;
 	}
 
 	&__phone {
@@ -61,6 +60,11 @@
 	}
 
 	&__hours {
+		margin-top: $s0;
+	}
+
+	&__minimum {
+		font-size: .875rem;
 		margin-top: $s0;
 	}
 
