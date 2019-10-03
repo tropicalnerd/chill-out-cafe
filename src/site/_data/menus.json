@@ -1,0 +1,102 @@
+[
+	{
+			"id": "menu01",
+			"title": "Lunch Special",
+			"info": "Monday&ndash;Sunday 10am&ndash;3pm<br />All entrees served with <em>steamed rice, salad and soup</em>.<br />Fried vegetable spring roll or pork roll add $1.00 each.",
+			"contents": [
+					{
+							"id": "L1",
+							"type": "menuitem",
+							"title": "Grilled Pork",
+							"desc": "Topping with oyster sauce. Served with steamed broccoli",
+							"price": 8
+					}, {
+							"id": "L2",
+							"type": "menuitem",
+							"title": "Grilled Chicken Breast",
+							"desc": "Topping with oyster sauce. Served with steamed broccoli",
+							"price": 8
+					}, {
+							"id": "L3",
+							"type": "menuitem",
+							"title": "Grilled Steak",
+							"desc": "Topping with oyster sauce. Served with steamed broccoli",
+							"price": 9
+					}, {
+							"id": "L4",
+							"type": "menuitem",
+							"title": "Grilled Salmon",
+							"desc": "Topping with shrimp, vegetable, and oyster sauce",
+							"price": 11
+					}, {
+							"id": "L5",
+							"type": "menuitem",
+							"title": "Grilled Shrimp",
+							"desc": "Grilled shrimp on steamed broccoli with oyser sauce",
+							"price": 10
+					}, {
+							"id": "L6",
+							"type": "menuitem",
+							"title": "Tilapia",
+							"desc": "Fried tilapia topping with shrimp, vegetable and basil",
+							"price": 10
+					}, {
+							"id": "L7",
+							"type": "menuitem",
+							"title": "Chicken Rote",
+							"desc": "Stir fried sliced chicken with yellow powder over steamed broccoli",
+							"price": 8
+					}, {
+							"id": "L8",
+							"type": "menuitem",
+							"title": "Himalaya Chicken",
+							"desc": "Stir fried sliced chicken with cashew nut and vegetable",
+							"price": 8
+					}, {
+							"id": "L9",
+							"type": "menuitem",
+							"title": "Beef with Oyster Sauce",
+							"desc": "Sauteed sliced beef, onion, carrot and asparagus with oyster sauce",
+							"price": 10
+					}, {
+							"id": "L10",
+							"type": "menuitem",
+							"title": "Basil",
+							"desc": "Pan fried hot pepper, vegetable and basil with a choice of:",
+							"options": [
+									{
+											"title": "Vegetable or chicken",
+											"price": 8
+									}, {
+											"title": "Beef",
+											"price": 9
+									}, {
+											"title": "Seafood",
+											"price": 11
+									}
+							]
+					}
+			] 
+	}, {
+			"id": "menu02",
+			"title": "Beverages",
+			"contents": [
+					{
+							"id": "B1",
+							"type": "menuitem",
+							"title": "Thai Ice Tea, Thai Ice Coffee",
+							"price": 3
+					}, {
+							"id": "B2",
+							"type": "menuitem",
+							"title": "Soft Drinks, Milk",
+							"price": 2
+					}, {
+							"id": "B3",
+							"type": "menuitem",
+							"title": "Bottle Water",
+							"price": 1.85
+					}
+			] 
+	}
+]

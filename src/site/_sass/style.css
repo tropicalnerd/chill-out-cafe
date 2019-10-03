@@ -43,7 +43,7 @@ a:not([class]) {
   text-decoration-skip-ink: auto; }
 
 /* Make images easier to work with */
-img {
+img, svg[role="img"] {
   max-width: 100%;
   display: block; }
 
@@ -65,8 +65,39 @@ select {
     transition: none !important;
     scroll-behavior: auto !important; } }
 
-/* Box sizing rules */
-*,
-*::before,
-*::after {
-  box-sizing: border-box; }
+/*** Variables ***/
+/*** Utility Classes ***/
+.bigger {
+  font-size: 1.125em; }
+
+.header {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  color: #FAFAFA;
+  background-color: #0088BB; }
+  .header__desc {
+    display: inline-block;
+    font-family: Palatino, Palatino Linotype, Palatino LT STD, Book Anitqua, Georgia, serif;
+    line-height: 1;
+    text-transform: uppercase;
+    padding-bottom: .25rem;
+    margin-top: .5rem;
+    border-bottom: 1px solid #FAFAFA; }
+    .header__desc__top {
+      font-size: 1.875rem; }
+    .header__desc__bottom {
+      font-size: 1.4rem; }
+  .header__wrap {
+    text-align: center;
+    padding: 3.375rem; }
+    .header__wrap > * + * {
+      margin-top: 1.5rem; }
+  .header__phone {
+    display: block;
+    font-size: 2rem;
+    line-height: 1rem;
+    color: #FAFAFA;
+    text-decoration: none;
+    font-weight: 600; }
+  .header__address {
+    font-size: .875rem;
+    margin-top: .25rem; }

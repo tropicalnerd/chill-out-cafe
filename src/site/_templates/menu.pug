@@ -1,0 +1,27 @@
+main.main
+	article
+		h1 Menu
+
+		each menu in menus
+			section.menu
+				h2.menu__title= menu.title
+
+				if menu.info
+					p.menu__info !{menu.info}
+				
+				ul.menu__list
+					each item in menu.contents
+						li.menu__item
+							span.menu__id= item.id
+							span.menu__title= item.title
+							if item.price
+								span.menu__price= item.price
+							div.menu__desc= item.desc
+							if item.options
+								ul.menu__options
+									each option in item.options
+										li.menu__option
+											span.menu__option-title= option.title
+											span.menu__option-price= option.price
+
+
