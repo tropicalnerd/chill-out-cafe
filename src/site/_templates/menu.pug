@@ -6,7 +6,12 @@ main.main
 		.page-decoration.reverse(role='presentation')
 			.page-decoration__inner
 
-		h1.page-title Menu
+		header.page-heading
+			.page-heading__icon
+				include ../_images/_inline/cloud-motif.svg
+			h1.page-heading__title Menu
+			.page-heading__icon.reverse
+				include ../_images/_inline/cloud-motif.svg
 
 		each menu in menus
 			section.menu
@@ -25,7 +30,7 @@ main.main
 							span.menu__item__title= item.title
 							
 							if item.price
-								span.menu__item__price $#{item.price}
+								span.menu__item__price $#{item.price.toFixed(2)}
 							
 							div.menu__item__desc= item.desc
 							
@@ -35,6 +40,6 @@ main.main
 									each option in item.options
 										li.menu__item__option
 											span.menu__item__option__title= option.title
-											span.menu__item__option__price $#{option.price}
+											span.menu__item__option__price $#{option.price.toFixed(2)}
 
 

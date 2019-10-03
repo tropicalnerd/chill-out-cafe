@@ -1,6 +1,6 @@
 [
 	{
-			"id": "menu01",
+			"id": "lunch-special",
 			"title": "Lunch Special",
 			"subtitle": "Monday&ndash;Sunday 10am&ndash;3pm",
 			"info": "All entrees served with <em>steamed rice, salad and soup</em>.<br />Fried vegetable spring roll or pork roll add $1.00 each.",
@@ -33,7 +33,7 @@
 							"id": "L5",
 							"type": "menuitem",
 							"title": "Grilled Shrimp",
-							"desc": "Grilled shrimp on steamed broccoli with oyser sauce",
+							"desc": "Grilled shrimp on steamed broccoli with oyster sauce",
 							"price": 10
 					}, {
 							"id": "L6",
@@ -76,10 +76,61 @@
 											"price": 11
 									}
 							]
+					}, {
+							"id": "L11",
+							"type": "menuitem",
+							"title": "Ginger",
+							"desc": "Stir fried fresh ginger, vegetable with a choice of:",
+							"options": [
+									{
+											"title": "Vegetable or chicken",
+											"price": 8
+									}, {
+											"title": "Beef",
+											"price": 9
+									}, {
+											"title": "Seafood",
+											"price": 11
+									}
+							]
+					},  {
+							"id": "L12",
+							"type": "menuitem",
+							"title": "Curry",
+							"desc": "Curry paste, coconut milk, vegetable with a choice of:",
+							"options": [
+									{
+											"title": "Vegetable or chicken",
+											"price": 8
+									}, {
+											"title": "Beef",
+											"price": 9
+									}, {
+											"title": "Seafood",
+											"price": 11
+									}
+							]
+					},	{
+							"id": "L13",
+							"type": "menuitem",
+							"title": "Sweet & Sour",
+							"desc": "Sautéed pineapple, tomato, and cucumber with a choice of:",
+							"options": [
+									{
+											"title": "Vegetable or chicken",
+											"price": 8
+									}, {
+											"title": "Beef",
+											"price": 9
+									}, {
+											"title": "Seafood",
+											"price": 11
+									}
+							]
 					}
 			] 
 	}, {
-			"id": "menu02",
+			"id": "beverages",
 			"title": "Beverages",
 			"contents": [
 					{
@@ -97,6 +148,26 @@
 							"type": "menuitem",
 							"title": "Bottle Water",
 							"price": 1.85
+					}, {
+							"id": "B4",
+							"type": "menuitem",
+							"title": "Perrier",
+							"price": 2.60
+					}, {
+							"id": "B5",
+							"type": "menuitem",
+							"title": "Coffee, Ice Tea, Hot Green Tea (free refill)",
+							"price": 2
+					}, {
+							"id": "B6",
+							"type": "menuitem",
+							"title": "Juice (Orange, Cranberry, Apple)",
+							"price": 2.50
+					}, {
+							"id": "B7",
+							"type": "menuitem",
+							"title": "Chocolate Milk, Hot Chocolate",
+							"price": 2
 					}
 			] 
 	}

@@ -115,14 +115,30 @@ article {
       .page-decoration__inner {
         border-radius: 2.25rem 0 0 0; } }
 
-.page-title {
-  font-family: heading-font;
-  font-size: 2.5rem;
-  line-height: 1;
-  font-weight: 300;
-  text-align: center;
-  text-transform: uppercase;
-  color: #222233; }
+.page-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .page-heading > * + * {
+    margin-left: 1rem; }
+  .page-heading__title {
+    font-family: heading-font;
+    font-size: 2.5rem;
+    line-height: 1;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+    color: #222233; }
+  .page-heading__icon {
+    width: 1.875rem; }
+  .page-heading__svg {
+    display: inline;
+    overflow: visible;
+    fill: none;
+    stroke: #0077AA;
+    stroke-width: 7px;
+    stroke-linecap: round;
+    stroke-linejoin: round; }
 
 .header {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
