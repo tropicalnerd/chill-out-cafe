@@ -1,7 +1,18 @@
 .header {
 	font-family: $body-font;
-	color: $paper-white;
+	text-align: center;
+	color: $bright-white;
 	background-color: $chill-out-blue;
+
+	&__wrap {
+		display: inline-block;
+
+	}
+
+	&__logo {
+		max-width: 16.875rem;
+		margin: 0 auto;
+	}
 
 	&__desc {
 		display: inline-block;

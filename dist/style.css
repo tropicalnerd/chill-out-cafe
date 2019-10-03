@@ -79,7 +79,7 @@ body {
   color: #222233; }
 
 main {
-  background-color: #0088BB;
+  background-color: #0077AA;
   padding-bottom: 3.375rem; }
 
 article {
@@ -90,7 +90,7 @@ article {
   position: absolute;
   width: 3.375rem;
   height: 2.25rem;
-  background-color: #0088BB; }
+  background-color: #0077AA; }
   .page-decoration__inner {
     position: absolute;
     bottom: 0;
@@ -121,8 +121,14 @@ article {
 
 .header {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  color: #FAFAFA;
-  background-color: #0088BB; }
+  text-align: center;
+  color: #FFF;
+  background-color: #0077AA; }
+  .header__wrap {
+    display: inline-block; }
+  .header__logo {
+    max-width: 16.875rem;
+    margin: 0 auto; }
   .header__desc {
     display: inline-block;
     font-family: Palatino, Palatino Linotype, Palatino LT STD, Book Anitqua, Georgia, serif;
@@ -171,12 +177,12 @@ article {
   font-size: 1.75rem;
   font-weight: 300;
   text-align: center;
-  color: #0088BB;
+  color: #0077AA;
   text-transform: uppercase; }
 
 .menu__info {
   line-height: 1.25;
-  color: #0088BB;
+  color: #0077AA;
   text-align: center; }
   .menu__info em {
     font-weight: 600; }
