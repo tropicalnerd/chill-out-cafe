@@ -10,9 +10,11 @@ $s-3: $s-2 / $ratio;
 $s1: $s0 * $ratio;
 $s2: $s1 * $ratio;
 $s3: $s2 * $ratio;
+$s4: $s3 * $ratio;
 
+$bright-white: #FFF;
 $paper-white: #FAFAFA;
-$ink-black: #222244;
+$ink-black: #222233;
 $chill-out-blue: #0088BB;
 
 /*** Utility Classes ***/
@@ -20,13 +22,49 @@ $chill-out-blue: #0088BB;
 	font-size: 1.125em;
 }
 
-/*** Layout ***/
+.reverse {
+	transform: scaleX(-1);
+}
 
+/*** Layout ***/
 body {
+	font-family: $body-font;
 	color: $ink-black;	
 }
 
+main {
+	background-color: $chill-out-blue;
+	padding-bottom: $s3;
+}
+
+article {
+	background-color: $paper-white;
+	border-radius: 0 0 $s1 $s1;
+}
+
+.page-decoration {
+	position: absolute;
+	width: $s3;
+	height: $s2;
+	background-color: $chill-out-blue;
+
+	&__inner {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 80%;
+		height: 80%;
+		background-color: $paper-white;
+		border-radius: $s1 0 0 0;
+	}
+
+	&.reverse {
+		right: 0;		
+	}
+}
+
 .page-title {
+	font-family: heading-font;
 	font-size: 2.5rem;
 	line-height: 1;
 	font-weight: 300;
@@ -43,4 +81,6 @@ article {
 	margin-right: auto;
 	padding: $s1;
 }
+
+
 

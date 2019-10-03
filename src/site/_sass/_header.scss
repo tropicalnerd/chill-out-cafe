@@ -10,7 +10,6 @@
 		text-transform: uppercase;
 		padding-bottom: .25rem;
 		margin-top: .5rem;
-		border-bottom: 1px solid $paper-white;
 
 		&__top {
 			font-size: 1.875rem;
@@ -21,13 +20,23 @@
 		}
 	}
 	
+	&__hr {
+		margin: 0 auto;
+		color: $paper-white;
+		background-color: $paper-white;
+		width: 90%;
+		height: 1px;
+		border-width: 0;
+	}
+
 	&__wrap {
 		text-align: center;
 		padding: $s3;
+	}
 
-		& > * + * {
-			margin-top: $s1;
-		}
+	&__address {
+		font-size: .875rem;
+		margin-top: .25rem;
 	}
 
 	&__phone {
@@ -37,12 +46,14 @@
 		color: $paper-white;
 		text-decoration: none;
 		font-weight: 600;
+		margin-top: $s1;
 	}
 
-	&__address {
-		font-size: .875rem;
-		margin-top: .25rem;
+	&__hours {
+		margin-top: $s1;
 	}
+
+	
 
 }
 
