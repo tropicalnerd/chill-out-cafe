@@ -40,6 +40,7 @@ main.main
 									each option in item.options
 										li.menu__item__option
 											span.menu__item__option__title !{option.title}
-											span.menu__item__option__price $#{option.price.toFixed(2)}
+											if option.price
+												span.menu__item__option__price $#{option.price.toFixed(2)}
 
 

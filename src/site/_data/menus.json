@@ -1,6 +1,6 @@
 [
 	{
-			"id": "lunch-special",
+			"id": "lunch",
 			"title": "Lunch Special",
 			"subtitle": "Monday&ndash;Sunday 10am&ndash;3pm",
 			"info": "All entrees served with <em>steamed rice, salad and soup</em>.<br />Fried vegetable spring roll or pork roll add $1.00 each.",
@@ -178,38 +178,93 @@
 						"id": "A1",
 						"type": "menuitem",
 						"title": "Golden Soft Shell Crab",
-						"desc": "Soft shell",
+						"desc": "Soft shell crab and asparagus seasoned in light batter, deep fried. Served with sweet chili sauce.",
 						"price": 11
 				}, {
-						"id": "A2",
+						"id": "A3",
 						"type": "menuitem",
-						"title": "Soft Drinks, Milk",
-						"price": 2
+						"title": "Calamari",
+						"desc": "Squid in seasoned tempura batter fried to perfection. Served with sweet chili sauce.",
+						"price": 9
 				}, {
-						"id": "B3",
+						"id": "A4",
 						"type": "menuitem",
-						"title": "Bottle Water",
-						"price": 1.85
+						"title": "Grill Squid",
+						"desc": "BBQ whole squid, sliced top with house-made sauce",
+						"price": 10
 				}, {
-						"id": "B4",
+						"id": "A5",
 						"type": "menuitem",
-						"title": "Perrier",
-						"price": 2.60
+						"title": "Fresh Spring Roll",
+						"desc": "Mixed green vegetables, cucumber, tofu, cilantro, rolled in rice paper topped with sweet chili sauce.",
+						"price": 7,
+						"options": [
+							{
+								"title": "Add chicken or beef $1 extra"
+							}, {
+								"title": "Add shrimp $1.75 extra"
+							}
+						]
 				}, {
-						"id": "B5",
+						"id": "A6",
 						"type": "menuitem",
-						"title": "Coffee, Ice Tea, Hot Green Tea (free refill)",
-						"price": 2
+						"title": "Shrimp Toast",
+						"desc": "Deep fried little triangle shape bread stuffed with minced shrimp and chicken. Served with crush peanut in sweet chili sauce.",
+						"price": 7
 				}, {
-						"id": "B6",
+						"id": "A7",
 						"type": "menuitem",
-						"title": "Juice &ndash; Orange, Cranberry, Apple",
-						"price": 2.50
+						"title": "Shrimp in Blanket",
+						"desc": "Crispy fried shrimp and minced chicken wrapped in bacon. Served with sweet chili sauce.",
+						"price": 7
 				}, {
-						"id": "B7",
+						"id": "A8",
 						"type": "menuitem",
-						"title": "Chocolate Milk, Hot Chocolate",
-						"price": 2
+						"title": "Shumai",
+						"desc": "Small steamed dumplings stuffed with shrimp and chicken and served with light vinegar sauce.",
+						"price": 6
+				}, {
+						"id": "A9",
+						"type": "menuitem",
+						"title": "Satay (Chicken or Pork)",
+						"desc": "Marinated and lightly grilled, braised with coconut milk. Served with peanut sauce and cucumber salad",
+						"price": 8
+				}, {
+						"id": "A10",
+						"type": "menuitem",
+						"title": "BBQ Ribs",
+						"desc": "Marinated rib with homemade barbecued sauce.",
+						"price": 7
+				}, {
+						"id": "A11",
+						"type": "menuitem",
+						"title": "Fried Spring Rolls",
+						"desc": "Crispy fried spring rolls stuffed with minced pork, glass noodle, shredded carrots, and woo dear mushroom. Served with sweet chili sauce.",
+						"price": 6
+				}, {
+						"id": "A12",
+						"type": "menuitem",
+						"title": "Fried Wonton",
+						"desc": "Wonton skin stuffed with minced chicken and shrimp",
+						"price": 6
+				}, {
+						"id": "A13",
+						"type": "menuitem",
+						"title": "Crispy Tofu",
+						"desc": "Deep fried fresh triangle bean curd. Served with sweet chili sauce and crushed peanut.",
+						"price": 5
+				}, {
+						"id": "A14",
+						"type": "menuitem",
+						"title": "Fried Vegetarian Spring Rolls",
+						"desc": "Crispy fried spring roll stuffed with assorted vegetable, glass noodle. Served with sweet chili sauce.",
+						"price": 4
+				}, {
+						"id": "A15",
+						"type": "menuitem",
+						"title": "Edamame",
+						"desc": "Steamed soy beans.",
+						"price": 5
 				}
 		] 
 }

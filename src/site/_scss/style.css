@@ -130,7 +130,7 @@ article {
     text-transform: uppercase;
     color: #222233; }
   .page-heading__icon {
-    width: 1.875rem; }
+    width: 1.75rem; }
   .page-heading__svg {
     display: inline;
     overflow: visible;
@@ -192,7 +192,7 @@ article {
 
 .menu {
   line-height: 1.3;
-  margin-top: 2.25rem; }
+  margin-top: 3.375rem; }
   .menu__title {
     font-family: Palatino, Palatino Linotype, Palatino LT STD, Book Anitqua, Georgia, serif;
     font-size: 1.75rem;
