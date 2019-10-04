@@ -73,7 +73,7 @@ select {
 /*** Layout ***/
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  color: #222233; }
+  color: #222833; }
 
 main {
   background-color: #0077AA;
@@ -117,6 +117,7 @@ article {
 
 .page-heading {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center; }
   .page-heading > * + * {
@@ -128,7 +129,7 @@ article {
     font-weight: 300;
     text-align: center;
     text-transform: uppercase;
-    color: #222233; }
+    color: #222833; }
   .page-heading__icon {
     width: 1.75rem; }
   .page-heading__svg {
@@ -190,6 +191,18 @@ article {
 .menus {
   padding-top: 2.25rem; }
 
+.menu-nav {
+  text-align: center;
+  margin-top: 1rem; }
+  .menu-nav a, .menu-nav a:visited {
+    color: #222833; }
+  .menu-nav__list {
+    display: inline-block;
+    max-width: 45ch; }
+  .menu-nav__item {
+    display: inline-block;
+    padding: 0 1em; }
+
 .menu {
   line-height: 1.3;
   margin-top: 3.375rem; }
@@ -203,11 +216,14 @@ article {
     text-transform: uppercase; }
   .menu__subtitle {
     color: #0077AA;
-    text-align: center;
-    margin-bottom: 1rem; }
-  .menu__info {
-    color: #0077AA;
     text-align: center; }
+  .menu__info {
+    max-width: 45ch;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: #0077AA; }
     .menu__info em {
       font-weight: 600; }
   .menu__item-list {
@@ -231,7 +247,7 @@ article {
   padding: 1rem;
   font-size: .75rem;
   text-align: center;
-  background-color: #222233;
+  background-color: #222833;
   color: #FAFAFA; }
   .footer__copyright + .footer__about::before {
     content: "|";

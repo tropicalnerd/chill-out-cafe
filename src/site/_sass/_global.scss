@@ -14,7 +14,7 @@ $s4: $s3 * $ratio;
 
 $bright-white: #FFF;
 $paper-white: #FAFAFA;
-$ink-black: #222233;
+$ink-black: #222833;
 $chill-out-blue: #0077AA;
 
 /*** Utility Classes ***/
@@ -84,6 +84,7 @@ article {
 
 .page-heading {
 	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
 	

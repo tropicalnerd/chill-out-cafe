@@ -13,9 +13,15 @@ main.main
 			.page-heading__icon.reverse
 				include ../_images/_inline/cloud-motif.svg
 
+			nav.menu-nav
+				ul.menu-nav__list
+					each menu in menus
+						li.menu-nav__item
+							a.menu-nav__link(href='#' + menu.id)= menu.title
+
 		each menu in menus
 			section.menu
-				h2.menu__title= menu.title
+				h2.menu__title(id=menu.id)= menu.title
 				if menu.subtitle
 					p.menu__subtitle !{menu.subtitle}
 
@@ -25,22 +31,26 @@ main.main
 				ul.menu__item-list
 					
 					each item in menu.contents
-						li.menu__item
-							span.menu__item__id #{item.id + '. '}
-							span.menu__item__title !{item.title}
-							
-							if item.price
-								span.menu__item__price $#{item.price.toFixed(2)}
-							
-							div.menu__item__desc= item.desc
-							
-							if item.options
-								ul.menu__item__option-list
-									
-									each option in item.options
-										li.menu__item__option
-											span.menu__item__option__title !{option.title}
-											if option.price
-												span.menu__item__option__price $#{option.price.toFixed(2)}
+						if item.type === 'menuitem'
+							li.menu__item
+								span.menu__item__id #{item.id + '. '}
+								span.menu__item__title !{item.title}
+								
+								if item.price
+									span.menu__item__price $#{item.price.toFixed(2)}
+								
+								div.menu__item__desc= item.desc
+								
+								if item.options
+									ul.menu__item__option-list
+										
+										each option in item.options
+											li.menu__item__option
+												span.menu__item__option__title !{option.title}
+												if option.price
+													span.menu__item__option__price $#{option.price.toFixed(2)}
+						else if item.type === 'menuinfo'
+							li.menu__info
+								p= item.info
 
 
