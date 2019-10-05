@@ -26,10 +26,22 @@ $chill-out-blue: #0077AA;
 	transform: scaleX(-1);
 }
 
+.unbold {
+	font-weight: normal;
+}
+
+
+
 /*** Layout ***/
+html {
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+}
+
 body {
 	font-family: $body-font;
 	color: $ink-black;	
+	overflow-x: hidden;
 }
 
 main {
@@ -82,16 +94,12 @@ article {
 	}
 }
 
-.page-heading {
-	display: flex;
+.page-header {
+	// display: flex;
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
 	
-	& > * + * {
-		margin-left: $s0;
-	}
-
 	&__title {
 		font-family: heading-font;
 		font-size: 2.5rem;
@@ -100,20 +108,25 @@ article {
 		text-align: center;
 		text-transform: uppercase;
 		color: $ink-black;
+
+		& > * + * {
+			margin-left: $s0;
+		}
 	}
 
 	&__icon {
+		display: inline-block;
 		width: 1.75rem;
 	}
 		
 	&__svg {
-		display: inline;
 		overflow: visible;
 		fill: none;
 		stroke: $chill-out-blue;
 		stroke-width: 7px;
 		stroke-linecap:round;
 		stroke-linejoin:round;
+		padding-bottom: .25rem;
 	}
 }
 

@@ -6,12 +6,14 @@ main.main
 		.page-decoration.reverse(role='presentation')
 			.page-decoration__inner
 
-		header.page-heading
-			.page-heading__icon
-				include ../_images/_inline/cloud-motif.svg
-			h1.page-heading__title Menu
-			.page-heading__icon.reverse
-				include ../_images/_inline/cloud-motif.svg
+		header.page-header
+			
+			h1.page-header__title
+				span.page-header__icon
+					include ../_images/_inline/cloud-motif.svg
+				span.page-header__text Menu
+				span.page-header__icon.reverse
+					include ../_images/_inline/cloud-motif.svg
 
 			nav.menu-nav
 				ul.menu-nav__list
@@ -39,7 +41,8 @@ main.main
 								if item.price
 									span.menu__item__price $#{item.price.toFixed(2)}
 								
-								div.menu__item__desc= item.desc
+								if item.desc
+									div.menu__item__desc !{item.desc}
 								
 								if item.options
 									ul.menu__item__option-list
@@ -49,7 +52,7 @@ main.main
 												span.menu__item__option__title !{option.title}
 												if option.price
 													span.menu__item__option__price $#{option.price.toFixed(2)}
-						else if item.type === 'menuinfo'
+						else if item.type === 'infoitem'
 							li.menu__info
 								p= item.info
 
